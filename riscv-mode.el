@@ -1,4 +1,4 @@
-;;; riscv-mode.el --- Major-mode for RISC-V assembly
+;;; riscv-mode.el --- Major-mode for RISC V assembly
 ;;
 ;; Copyright (C) 2016 Adam Niederer
 ;;

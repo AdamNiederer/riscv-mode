@@ -32,7 +32,6 @@
   "\\bzero\\|ra\\|[sgtf]p\\|f?s1[01]\\|f?s[0-9]\\|t[0-6]\\|f?a[0-7]\\|ft[0-9]\\|ft1[01]")
 
 (defconst riscv-keywords
-
   '("lui" "auipc"
     "jal" "jalr"
     "beq" "bne" "blt" "bge" "bltu" "bgeu"
@@ -127,7 +126,7 @@
   :group 'riscv
   :type 'string)
 
-(defvar riscv-map
+(defvar riscv-mode-map
   (let ((map (make-keymap)))
     (define-key map (kbd "<backtab>") 'riscv-dedent)
     (define-key map (kbd "C-c C-c") 'riscv-run-buffer)
@@ -213,7 +212,6 @@ buffer's file"
 ;;;###autoload
 (define-derived-mode riscv-mode prog-mode "RISC V"
   "Major mode for editing RISC V assembly."
-  (use-local-map riscv-map)
   (font-lock-add-keywords nil riscv-font-lock-keywords)
   (setq tab-width riscv-tab-width)
   (setq indent-line-function 'riscv-indent)

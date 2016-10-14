@@ -1,4 +1,4 @@
-![GPLv3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg)
+![GPLv3](https://img.shields.io/badge/license-GPLv3-brightgreen.svg) [![MELPA](https://melpa.org/packages/riscv-mode-badge.svg)](https://melpa.org/#/riscv-mode)
 
 # riscv-mode
 RISC V assembly major mode in emacs
@@ -9,7 +9,7 @@ RISC V assembly major mode in emacs
 - Code evaluation with [spike](https://github.com/riscv/riscv-isa-sim)
 
 ## Installation & Setup
-MELPA in progress
+riscv-mode is available on [Melpa](https://melpa.org/#/riscv-mode).
 
 ## License
 GPLv3+

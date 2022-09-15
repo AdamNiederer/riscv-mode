@@ -226,8 +226,8 @@ buffer's file"
 (define-derived-mode riscv-mode prog-mode "RISC V"
   "Major mode for editing RISC V assembly."
   (font-lock-add-keywords nil riscv-font-lock-keywords)
-  (setq tab-width riscv-tab-width)
-  (setq indent-line-function 'riscv-indent)
+  (setq-local tab-width riscv-tab-width)
+  (setq-local indent-line-function 'riscv-indent)
   (modify-syntax-entry ?# "< b" riscv-mode-syntax-table)
   (modify-syntax-entry ?\n "> b" riscv-mode-syntax-table))
 
